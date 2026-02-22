@@ -1,0 +1,9 @@
+pandas
+numpy
+xgboost
+scikit-learn
+pyathena
+boto3
+sagemaker
+joblib
+pyarrow
