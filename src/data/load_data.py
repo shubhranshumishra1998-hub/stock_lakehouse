@@ -1,6 +1,7 @@
-import pandas as pd
-from pyathena import connect
+from pyspark.sql import SparkSession
+from pyspark.sql.function import *
+from pyspark.sql.type import *
 
-def load_from_athena(query, database):
-    conn = connect(region_name="us-east-2")
-    return pd.read_sql(query, conn)
+
+
+df= spark.read.format("parquet").load(
